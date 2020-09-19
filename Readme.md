@@ -1,7 +1,7 @@
 # Личный проект «YetiCave»
 
 * Студент: [Вета Иванченко](https://up.htmlacademy.ru/php/12/user/151110).
-* Наставник: [Владимир Сафонов](https://htmlacademy.ru/profile/id1384111).
+* Наставник: [Александр Палян](https://htmlacademy.ru/profile/id1231107).
 
 ---
 
