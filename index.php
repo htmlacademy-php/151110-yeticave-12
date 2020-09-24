@@ -49,11 +49,12 @@ $lots = [
 function format_price ($price) {
 
     $price_rounded = ceil($price);
+    $currency = "₽";
 
     if ($price_rounded < 1000) {
-        $price_formatted = $price_rounded . " ₽";
+        $price_formatted = $price_rounded . " " . $currency;
     } else {
-        $price_formatted = number_format($price_rounded, 0, ".", " ") . " ₽";
+        $price_formatted = number_format($price_rounded, 0, ".", " ") . " " . $currency;
     }
 
     return $price_formatted;
