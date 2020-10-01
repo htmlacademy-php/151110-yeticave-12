@@ -52,12 +52,12 @@ function format_price ($price) {
     $currency = "₽";
 
     if ($price_rounded < 1000) {
-        $price_formatted = $price_rounded . " " . $currency;
+        $price_formatted = $price_rounded;
     } else {
-        $price_formatted = number_format($price_rounded, 0, ".", " ") . " " . $currency;
+        $price_formatted = number_format($price_rounded, 0, ".", " ");
     }
 
-    return $price_formatted;
+    return $price_formatted . " " . $currency;
 }
 ?>
 <!DOCTYPE html>
