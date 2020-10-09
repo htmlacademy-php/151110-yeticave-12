@@ -94,7 +94,10 @@ function get_remaining_time ($expiration_date) {
     $remaining_hours_formatted = str_pad($remaining_hours, 2, 0, STR_PAD_LEFT);
     $remaining_minutes_formatted = str_pad($remaining_minutes, 2, 0, STR_PAD_LEFT);
 
-    return [$remaining_hours_formatted, $remaining_minutes_formatted];
+    return [
+        'hours' => $remaining_hours_formatted,
+        'minutes' => $remaining_minutes_formatted
+    ];
 }
 
 $page_content = include_template('templates/main.php', ['categories' => $categories, 'lots' => $lots]);
