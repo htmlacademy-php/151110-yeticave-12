@@ -28,7 +28,7 @@
                         <span class="lot__cost"><?=htmlspecialchars(format_price($lot['price']));?></span>
                     </div>
                     <div class="lot__timer timer">
-                        12:23
+                        <?=implode(":", get_remaining_time($lot['expiration']));?>
                     </div>
                 </div>
             </div>
